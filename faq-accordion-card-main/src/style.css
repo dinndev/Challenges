@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.active .accordion{
+  font-weight: 700;
+}
+
+.panel h2 { 
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(29, 30, 53, 0.80);
+  text-align: left;
+  line-height: 20px;
+}
+
+.panel {
+    padding: 10px 0 ;
+    transition: all 0.3s;
+    width: 50%;
+    margin-right: 4rem;
+
+}
+
+.accordion::after {
+ content: "";
+}
+
+body {
+    background: linear-gradient(180deg, #AF67E9 0.82%, #6565E7 102.21%);
+    background-repeat:no-repeat ;
+    height: 100vh;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.panel {
+    display: none;
+} 
+.accordion {
+    background-color: white;
+    border: none;
+    padding: 20px 0; 
+    color: rgba(29, 30, 53, 0.70);
+    font-family: 'Kumbh Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none; 
+    font-size: 12px;
+    font-weight: normal;
+    width: 50%;
+    margin-right: 4rem;
+    border-bottom: rgba(29, 30, 53, 0.20) 1px solid ;
+    text-align: left;
+
+}
+.accordion:hover {
+    color: rgba(244, 124, 87, 1)
+}
+.column { 
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    width: 70%;
+    height: 60vh;
+    border-radius: 20px;
+    justify-content: flex-end;
+    position: relative;
+
+    
+}
+.illustrations {
+}
+
+.girl{
+    position: absolute;
+    right: 60%;
+    top: 5%
+}
