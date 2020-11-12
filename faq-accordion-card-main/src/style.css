@@ -10,9 +10,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.active .accordion{
-  font-weight: 700;
-}
+
 
 .panel h2 { 
   font-family: 'Kumbh Sans', sans-serif;
@@ -23,15 +21,11 @@ body {
 }
 
 .panel {
-    padding: 10px 0 ;
+    padding: 0 18px;
     transition: all 0.3s;
-    width: 50%;
-    margin-right: 4rem;
-
-}
-
-.accordion::after {
- content: "";
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 body {
@@ -39,56 +33,79 @@ body {
     background-repeat:no-repeat ;
     height: 100vh;
 }
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin-top: 2rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
-
-.panel {
-    display: none;
-} 
 .accordion {
     background-color: white;
     border: none;
-    padding: 20px 0; 
-    color: rgba(29, 30, 53, 0.70);
+    padding: 20px 0px;
+    color: rgba(29, 30, 53, 0.85);
     font-family: 'Kumbh Sans', sans-serif;
     cursor: pointer;
     transition: all 0.2s;
     outline: none; 
     font-size: 12px;
     font-weight: normal;
-    width: 50%;
-    margin-right: 4rem;
-    border-bottom: rgba(29, 30, 53, 0.20) 1px solid ;
+    width: 70%;
+    border-bottom: rgba(29, 30, 53, 0.10) 1px solid ;
     text-align: left;
+    margin-left: 4rem;
 
+} 
+.accordion p{
+    display: inline-block;
+    margin-right: 5.2rem;
 }
-.accordion:hover {
+
+.title {
+    margin: 0 0 1.4rem 4rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.active, .accordion:hover {
     color: rgba(244, 124, 87, 1)
 }
+
+
 .column { 
     display: flex;
     flex-direction: column;
-    width: 70%;
-    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+    align-items: flex-start;
     justify-content: center;
+
 }
 
 .container {
     display: flex;
     background-color: white;
     width: 70%;
-    height: 60vh;
+    height: 65%;
     border-radius: 20px;
     justify-content: flex-end;
     position: relative;
-
+    overflow: hidden;
     
 }
-.illustrations {
-}
 
-.girl{
+.images {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.box  {
     position: absolute;
-    right: 60%;
-    top: 5%
+    left: 8%;
+    top: 40%;
+    z-index: 100;
+
+}
+.girl {
+    position: absolute;
+    right: 55%;
+    top: 10%;
+
 }

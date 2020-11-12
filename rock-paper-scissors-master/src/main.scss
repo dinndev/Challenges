@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.score-info {
+   border: 3px solid rgba(255, 255, 255, 0.11);
+   margin: 5% auto;
+   max-width: 80%;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 1rem;
+   .title {
+       .logo {
+           transform: scale(0.5);
+       }
+   }
+   .score-board {
+       border-radius: 6px;
+       background-color: white;
+       color: black;
+       text-align: center;
+       padding: 0.5rem 0.8rem;
+       margin-right: 1rem;
+       width: 7rem;
+      .score {
+          font-size: 2.6rem;
+          font-weight: 700;
+      }
+      h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: hsl(229, 64%, 46%);
+        letter-spacing: 1.1px;
+      }   
+   }
+}
+
+.choices {
+ display: grid;
+ margin: 1rem 0 2rem 0;
+ grid-template-areas: 
+ "rock  paper"
+
+"scissors scissors"
+ ;
+align-items: center;
+padding: 3rem;
+column-gap: 3em;
+row-gap: 3em;
+
+.image-border {
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+ .rock {
+     grid-area: rock;
+     position: relative;
+     width: 8.2rem;
+     margin: 0;
+    background-color:red;
+    padding: 1rem;
+ }
+ .rock::after {
+    content: " ";
+    border: white 6px solid;
+    position: absolute;
+    width: 50%;
+    bottom: 3rem;
+    left: 7em;
+    align-items: center;
+    
+ }
+ .paper {
+    grid-area: paper ;
+}
+.scissors {
+    grid-area: scissors ;
+}
+}
+footer {
+    color: white;
+}

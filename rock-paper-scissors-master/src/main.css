@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(#1f3756, #141539);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.score-info {
+  border: 3px solid rgba(255, 255, 255, 0.11);
+  margin: 5% auto;
+  max-width: 80%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1rem;
+}
+
+.score-info .title .logo {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.score-info .score-board {
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  margin-right: 1rem;
+  width: 7rem;
+}
+
+.score-info .score-board .score {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.score-info .score-board h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #2a46c0;
+  letter-spacing: 1.1px;
+}
+
+.choices {
+  display: -ms-grid;
+  display: grid;
+  margin: 1rem 0 2rem 0;
+      grid-template-areas: "rock  paper"  "scissors scissors";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+  row-gap: 3em;
+}
+
+.choices .image-border {
+  width: 6rem;
+  height: 6rem;
+  margin: auto;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.choices .rock {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: rock;
+  position: relative;
+  width: 8.2rem;
+  margin: 0;
+  background-color: red;
+  padding: 1rem;
+}
+
+.choices .rock::after {
+  content: " ";
+  border: white 6px solid;
+  position: absolute;
+  width: 50%;
+  bottom: 3rem;
+  left: 7em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choices .paper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: paper;
+}
+
+.choices .scissors {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: scissors;
+}
+
+footer {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

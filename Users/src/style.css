@@ -1,0 +1,54 @@
+body {
+   background-color: #F2F7FE;
+   color: #Aca7ad;
+}
+
+*{
+   box-sizing: border-box;
+}
+.sample-pics img {
+   object-fit: contain;
+   height: 2rem;
+}
+.active {
+   color: #2e3cb4;
+}
+
+.nav-list li{
+   font-size: 1rem
+}
+input {
+  background-color: #E4EEFF;
+  color: #a2bade ;
+}
+.status-nav li {
+   font-size: 1rem
+   
+}
+.overview ,.clients ,.accounts {
+   margin-right: 3.5rem
+}
+
+.manage {
+   color: #2e3cb4;
+}
+.nav-active {
+   font-weight: bold;
+   color: #2e3cb4;
+   border-bottom: 2px #2e3cb4 solid;
+}
+.card-nav svg {
+   color: #2e3cb4;
+}
+.client {
+   background-color: #14d2ff;
+   color: white;
+}
+.turnover {
+   background-color: #2e3cb4;
+   color: white;
+}
+.up-right {
+   width: 1.3rem;
+   height: 1.3rem;
+}
